@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+         .newly{
+            height: 400px;
+            width: 400px;
+            background-color: gray;
+            margin: auto;
+            position: relative;
+        }
+        .add{
+            font-size: 200px;
+            width: 80%;
+            border: 2px solid black;
+            background-size: cover;
+            border-radius: 10px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0.0;
+            transition: 4s;
+        }
+        .newly:hover .add{
+            opacity: 1;
+            left: 0px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="newly">
+        <button type="button" class="add">
+          <img src="p4.jpg" width="100%" height="100%">
+        </button>
+      </div>
+</body>
+</html>
