@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+</head>
+<body style="text-align: center;">
+     <table border="2px" cellspacing="0px" cellpadding="10px">
+        <tr><td>
+    <form action="photo.avif" style="width: 310px;" onsubmit="return doc()">
+        <h1>Create Your Account</h1>
+        <p style="font-size: 18px; color: gray;">Lets get started with your 30 days free trial</p>
+        <input type="textbox" placeholder="Name" id="name" style="width: 290px; height: 25px; margin-top: 20px;"/><br>
+        <input type="textbox" placeholder="Username" id="username" style="width: 290px; height: 25px; margin-top: 20px;"/><br>
+        <input type="password" placeholder="Password" id="pass" style="width: 290px; height: 25px; margin-top: 20px;"/><br>
+        <button type="submit" style="width: 290px; height: 25px; margin-top: 20px; border-radius: 40px; color: white; background-color: black;">create an account</button>
+</td></tr>
+    </form>
+</table>
+</body>
+<script>
+    function doc(){
+        let n1=document.getElementById("name").value
+        let n2=document.getElementById("username").value
+        let n3=document.getElementById("pass").value
+        if(n1==""){
+            alert("Please Name")
+             return false;
+        }
+        else if (n2==""){
+            alert ("Please Username")
+            return false;
+        }
+        else if (n3==""){
+            alert("Please Password")
+            return false;
+        }
+        else if(n3.length<8){
+            alert ("Please Input 8 Digit Password")
+            return false;
+        }
+        else{
+            true;
+        }
+    }
+</script>
+</html>
