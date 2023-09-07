@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNOU</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #d1d1d1;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .colBox {
+            border: 1px solid red;
+        }
+
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-bottom: 11px;
+            border-bottom: 2px solid lightgray;
+        }
+       
+        .logo{
+            display: flex;
+            justify-content: center;
+           align-items: flex-start;
+        }
+          .logo11{
+            align-items: flex-end;
+            display: flex;
+            justify-content: center;
+          }
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        .center1{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+       
+        .menu {
+            height: 55px;
+            background-color: #369bd4;
+            color: white
+        }
+     
+        .info2 {
+            height: 63px;
+            position: relative;
+        }
+        .info2 ul {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            overflow: hidden;
+        }
+        .info2 ul li {
+            list-style: none;
+            width: 171px;
+            display: flex;
+            border-radius: 24px;
+            background-color: #e8e8e8;
+        }
+        .info2 ul li a {
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+             align-items: center;
+            padding: 12px 10px;
+        }
+
+        .form {
+            background-color: #f6f6f5;
+        }
+        .for2{
+           border-left: 16px solid white;
+           border-right: 16px solid white;
+           border-top: 16px solid white;
+           background-color: #fbfbfb;
+        }
+        
+        .link {
+           height: 180px;
+           margin-top: 10px;
+           background-color: #f7f6e8;
+        }
+        .link ul li{
+          list-style: none;
+          margin-bottom: 30px;
+        }
+        .link ul li a{
+           font-weight: bold;
+        }
+        .scroll {
+            height: 250px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .overflow{
+            overflow: scroll;
+        }
+        .scroll ul{
+            padding-left: 30px;
+        }
+
+                        /* footer */
+
+        .footer {
+            background-color: #369ad5;
+            padding-left: 30px;
+            padding-top: 15px;
+        }
+        .footer ul li{
+            list-style: none;
+        }
+        .footer ul li a{
+            color: white;
+        }
+        .color{
+            color: white;
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1000px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+           
+        }
+
+        @media (min-width: 992px) {
+           
+        }
+ 
+        @media (max-width: 992px){
+        .info2 ul li {
+            display: flex;
+            border-radius: 24px;
+        }
+        .info2 ul li a{
+            padding: 5px 5px;
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+             align-items: center;
+        }
+        }
+        @media (min-width: 768px) {
+        .center{
+                padding-top: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+             }
+            .header1{
+                visibility: hidden;
+                position: absolute;
+            }
+            .center{
+                text-align: center;
+            }
+            .logo1{
+              justify-content: left;
+            }
+            .logo2{
+               justify-content: right;
+               margin-top: 20px;
+            }
+            .center{
+            display: flex;
+            justify-content: center;
+           }
+           .for2{
+            justify-content: center;
+            height: 300px;
+        }
+        .link{
+            height: 240px;
+        }
+        .map{
+            text-align: center;
+        }
+        .for2{
+            height: 380px;
+        }
+        }
+        @media (min-width: 576px) {
+
+        }
+        @media (max-width: 576px){
+            .link{
+            height: 460px;
+        }
+        .for2{
+            justify-content: center;
+            height: 380px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: white;">
+        <header>
+            <div class="row header1 head">
+                <div class="col-2">
+                   <span style="font-size: 12px;">24 Aug 2023 09:10</span> 
+                </div>
+                <div class="col-2">
+                    <span style="font-size: 12px;">
+                    <a href="#" onclick="Zoompage('A')" id="A">A</a>|
+                    <a href="#" onclick="Zoompage('A-')" id="A-">A-</a>|
+                    <a href="#" onclick="Zoompage('A+')" id="A+">A+</a>
+                </span>
+                </div>
+                <div class="col-2">
+                    <span style="font-size: 12px;">
+                    Select Language|
+                    <!-- <select>
+                        <option></option>
+                        <option style="color: blue;">Hindi</option>
+                    </select> -->
+                </span>
+                </div>
+                <div class="col-2">
+                    <span style="font-size: 13px;">
+                    <a href="http://www.ignou.ac.in/node/175" id="Screen Reader Access">Screen Reader Access</a>  
+                    </span>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 log logo logo1">
+                    <img src="Ignou logo.png" height="120px">
+                </div>
+                <div class="col-md-6 log">
+                    <div class="row">
+                        <div class="col-12 center">
+                            <h5 style="color: maroon;">INDIRA GANDHI NATIONAL OPEN UNIVERSITY</h5>
+                        </div>
+                        <div class="col-12 center1">
+                            <input type="text" id="enhanced by google" placeholder="ENHANCED BY Google" style="border: 1px solid blue; border-radius: 8px; font-size: 12px; height: 35px; width: 200px; text-align: center;">
+                            <input type="text" id="search" placeholder="SEARCH" style="border: 1px solid blue; height: 35px; width: 90px; text-align: center; border-radius: 8px; font-size: 12px; margin-left: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 log logo11 logo2">
+                    <img src ="NAAC-pic.jpg" height="100px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 menu">
+
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="http://www.ignou.ac.in/">Home</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About IGNOU
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou">About Us</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/profile/2">Profile</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/authority/member/detail/5304/Smt__Droupadi_Murmu-5304">Authorities</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/school">Schools of Studies</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/division">Divisions</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/icc">Institutes/Centers/Cells/Units</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/chair">Chair</a>
+                                <a class="dropdown-item" href="http://ignou.ac.in/userfiles/Organizational-Structure.jpg">Organisation Structure</a>
+                                <a class="dropdown-item" href="http://ignou.ac.in/ignou/aboutignou/division/ad/corevalue">Core Values</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://sites.google.com/ignou.ac.in/publications-1/home">Publications</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Register Online
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://eportal.ignou.ac.in/oace/OACEHome.aspx">Academic Counselor Portal</a>
+                                <a class="dropdown-item" href="https://ignoualumni.samarth.edu.in/index.php/alumni/registration/register">Alumni Portal</a>
+                                <a class="dropdown-item" href="https://ignouadmission.samarth.edu.in/">Fresh Admission(Distance)</a>
+                                <a class="dropdown-item" href="https://ignouiop.samarth.edu.in/">Fresh Admission(Online)</a>
+                                <a class="dropdown-item" href="https://onlinerr.ignou.ac.in/">Re-Registration</a>
+                                <a class="dropdown-item" href="https://exam.ignou.ac.in/">Term End Exam</a>
+                                <a class="dropdown-item" href="https://onlineservices.ignou.ac.in/reevaluation/">Re-Evaluation</a>
+                                <a class="dropdown-item" href="http://ignou.ac.in/userfiles/entrance%20exam.pdf">Entrance Exam</a>
+                                <a class="dropdown-item" href="https://onlineservices.ignou.ac.in/idms/">20th to 36th Convocation Degree/Diploma</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://onlineservices.ignou.ac.in/convocation/">37th Convocation Degree/Diploma</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Student Support
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/studentzone/1">Student Zone</a>
+                                <a class="dropdown-item" href="https://igram.ignou.ac.in/">Student Grievances</a>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/studentzone/downloads/3">Downloads</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/studentzone/results/1">Results</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Regional Network
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://www.ignou.ac.in/ignou/aboutignou/regional/about">Regional Centers</a>
+                                <a class="dropdown-item" href="http://ignou.ac.in/userfiles/RC%20Wise%20LSC%20_RSD_2nd%20September%202019.pdf">Study Centres</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="http://ignou.ac.in//userfiles/Operational%20Areas.pdf">Operational Areas</a>
+                              </div>
+                            </li>
+                            <li class="nav-item" style="padding-left: 190px;">
+                                <a class="nav-link" href="http://www.ignou.ac.in/userfiles/ContactUs-2019.pdf">Contact</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-8 slider">
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="https://onlinerr.ignou.ac.in/">
+                            <img class="d-block w-100"  src="ignou-admission.jpg" class="img-fluid" alt="First slide">
+                        </a>
+                        </div>
+                          <div class="carousel-item">
+                            <a href="http://www.ignou.ac.in/ignou/studentzone/results/1">
+                            <img class="d-block w-100"  src="IGNOU-TEE-Result.png" class="img-fluid" alt="Second slide">
+                        </a>
+                        </div>
+                          <div class="carousel-item">
+                            <a href="http://ignou.ac.in/gyandhara.html">
+                            <img class="d-block w-100"  src="gyandhara.jpeg" class="img-fluid" alt="Third slide">
+                        </a>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+                </div>
+                <div class="col-4 slider">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="pick 1.webp" class="img-fluid" alt="First slide">
+                        </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="pick 2.jpg" class="img-fluid" alt="Second slide">
+                        </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="pick 3.jpg" class="img-fluid" alt="Third slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 info1">
+                    <marquee style="color: blue;">
+                        <p style="font-size: 13px;">IGNOU has been awareded A++ Grade by the NAAC 2021 || www.ignou.ac.in and its sundomains are the only authentic sources of information of IGNOU ||</p>
+                      </marquee> 
+                </div>
+                <div class="col-12 info2">
+                    <ul>
+                        <li><a href="http://www.ignou.ac.in/ignou/studentzone/results/1">Results</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/studentzone/downloads/3">Downloads</a></li>
+                        <li><a href="https://egyankosh.ac.in/">eGyanKosh</a></li>
+                        <li><a href="https://freedom2learn.ignouonline.ac.in/pages/">PodCast</a></li>
+                        <li><a href="http://ignou.ac.in//userfiles/sanskrit.pdf">Sanskrit Discipline</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form">
+                    <p style="border-bottom: 1px solid rgb(234, 129, 90); font-size: 20px; padding-bottom: 20px;">Study at IGNOU</p>
+                    <div class="row" style="justify-content: center;">
+                    <div class="col boxer">
+                        <ul type="square" style="padding-left: 30px;">
+                    <li style="padding-bottom: 38px;">Flexible Admission <br>Rules</li>
+                    <li style="padding-bottom: 15px;">Nationwide Student <br>Support Services </br>Network</li>
+                    <li>Resource Sharing, <br> Collaboration & <br>Networking with other </br> Universities</li>
+                </ul>
+                </div>
+                     <div class="col boxer">
+                       <ul type="square" style="padding-left: 30px;">
+                        <li style="padding-bottom: 15px;">Individualised Study <br> Flexibility in Terms of </br>Place, Pace & Duration</li>
+                        <li style="padding-bottom: 38px;">Cost Effective <br> Programmes</li>
+                        <li>Programmes Based on <br> Students Need Analysis</li>
+                       </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 form for2" style="padding-top: 50px;">
+                    <form action="#" method="get">
+                         <div class="form group">
+                        <label for="Enrollment"> ENROLLMENT NUMBER:</label>
+                    <input class="form-control" type="text" placeholder="Enter Enrollment No" id="Enrollment"><br>
+                   </div>
+                     <div class="form group">
+                    PROGRAMME: 
+                    <select class="form-control">
+                        <option>Select Programme</option>
+                        <optgroup label="--select--">
+                            <option>ACE</option>
+                            <option>ACFS</option>
+                            <option>ACISE</option>
+                            <option>ACPDM</option>
+                            <option>ACPSD</option>
+                            <option>ACSEPD</option>
+                            <option>ACSM</option>
+                            <option>ADACM</option>
+                            <option>ADAOM</option>
+                            <option>ADCM</option>
+                            <option>ADIT</option>
+                            <option>ADTS</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+                 <div class="form group">
+                    DATE OF BIRTH: 
+                    <input class="form-control" type="date" placeholder="dd/mm/yy" id="date"><br>
+                </div>
+                    <button type="button" style="border: 1px solid gray; height: 27px; width: 100px;">check status</button>
+                </form>
+                </div>
+            </div>
+            <div class="row  text-secondary">
+                <div class="col-6 link">
+                    <ul>
+                        <li><a href="https://hall_ticket.ignou.ac.in/HALLticketjun23/IGNOUHallTicketJun2023.aspx" value="this link">
+                           Hall Ticket for June 2023 Term End Examination for ODL Students<span style="font-size: 13px; color: orange;"> NEW</span></a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/news/latest/detail/Fresh_AdmissionRe-registration_for__all_programmes_offered_in_ODLOnline_mode_for_the_July_2023_session_has_been_extended_till_21st_August_2023-853" value="this link">
+                            Fresh Admission/Re-registration for all programmes offered in ODL/Online mode for the July 2023 session has been extended till 21st August 2023<span style="font-size: 13px; color: orange;"> NEW</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-6 link">
+                    <ul>
+                        <li><a href="" value="this link">
+                            Hall ticket Link for IOP Students Online <br>programmes for June TEE<span style="font-size: 13px; color: orange;"> NEW</span>
+                        </a></li>
+                        <li><a href="http://www.ignou.ac.in/userfiles/RU-Result-July2022.pdf" value="this link">
+                          <span style="color: red;">Result-Ph D July 2022 List of selected candidates</span><span style="font-size: 13px; color: orange;"> NEW</span>   
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 scroll map">
+                    <a href="http://www.ignou.ac.in/ignou/aboutignou/regional/map" value="map">
+                       <img src="map pic.PNG" height="220px" id="map"><br>
+                       <span style="color: black; font-weight: bold;">Our Network</span> </a>
+                </div>
+                <div class="col-md-6 scroll overflow">
+                    <h4 style="color: blue; margin-left: 30px;">News and Announcement</h4>
+                    <ul style="margin-left: 20px;">
+                        <li> 
+                            <a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Results_of_Screening_of_Applications_for_the_post_of_Professor_Anthropology_Professor_Environmental_sciences_Professor_Sociology_Professor_History_Professor_Tourism_Studies_Associate_Professor_Tourism_Studies_Associate_Professor_Philosophy_advertised_by_IGNOU_vide_Advertisement_No_022022ACD_dated_31_12_2022_-2855" value="this link"><span style="color: red;">Results of Screening of Application for the post for the post of Professor (Anthropology), Professoor (Environmental Science), Professor (Sociology), Professor (History), Professor(Tourism Studies), Associate Professor (Tourism Studies), Associate Professor (Philosophy) advertised by IGNOU vide Advertisement No. 02/2022/ACD dated 31.12.2022</span></a>
+                        </li>
+                        <li>
+                           <a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Circular-_77th_Independence_Day_Celebration_and_Tightening_of_Security_Arrangements_at_IGNOU_Campus-2854" value="this link"><span style="color: blue;">Circular- 77th Independence Day Celebration and Tightening of Security Arrangements at IGNOU Campus</span></a>  
+                        </li>
+                        <li>
+                          <a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Inviting_Nominations_for_UGC_Approved_6-day_Short_Term_Programme_on_Design_Development_and_Delivery_of_MOOCs-2853" value="this link"><span style="color: blue;">Inviting Nominations for UGC Approved 6-day Short Term Programme on Design, Development, and Delivery of MOOCs</span></a>
+                        </li>
+                        <li> 
+                            <a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Admission_Portal_for_Offering_IGNOU_Programmes_to_the_Agniveers_of_the_Indian_Air_Force_Launched-2851" value="this link"><span style="color: blue;">Admission Portal for Offering IGNOU Programmes to the Agniveers of the Indian Air Force Launched</span></a>
+                        </li>
+                        <li> 
+                            <a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/entries_are_invited_for_Best_Innovation_Award_-_2023-2841" value="this link"><span style="color: red;">entries are invited for Best Innovation Award - 2023</span></a>
+                        </li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Project_Submission_Link_for_IOP_programmes_Online_mode-2852"><span style="color: blue;">Project Submission Link for IOP programmes (online mode)</span></a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Result-_Ph_D_July_2022_List_of_selected_candidates-2850"><span style="color: blue;">Result- ph D July 2022 List of selected candidates</span></a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/announcements/latest/detail/Tentative_Datesheet_for_Term_End_Examination_December_2023-2849"><span style="color: blue;">Tentative Datesheet for Term End Examination December,</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col-md-3 footer color">
+                   <span style="font-weight: bold; font-size: 22px;">Employee Section</span> 
+                    <ul>
+                        <li><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&hd=ignou.ac.in&osid=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1207760570%3A1692895525697116">Mall Service</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/aboutignou/regional/about">Regional Network</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/footer/RC-Services">RC Services</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/footer/relatedlinks">SOUs/Other Institutions</a></li>
+                        <li><a href="http://ignou.ac.in/userfiles/Empanelled-Hospitals.pdf">Empanelled Hospitals</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/advertisements/latest/jobs">Jobs at IGNOU</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/advertisements/latest/tenders">Tenders of IGNOU</a></li>
+                        <li><a href="http://ignou.ac.in/userfiles/Telephone-directory.pdf">Telephone Directory</a></li>
+                        <li><a href="http://cacd.ignou.ac.in/cacd/index.aspx">Complaint Against Caste Discrimination</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/footer/sexual%2520harassment">Committee Against Sexual Harassment</a></li>
+                        <li><a href="https://cuignou.samarth.ac.in/index.php/site/login">IGNOU- SAMARTH Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer color">
+                   <span style="font-weight: bold; font-size: 22px;">Student Section</span>
+                    <ul>
+                        <li><a href="http://www.ignou.ac.in/ignou/studentzone/adminssionanouncement/1">Common Prospectus</a></li>
+                        <li><a href="https://freedom2learn.ignouonline.ac.in/pages/">Podcast Link</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/ignouudyami/">IGNOU UDYAMI</a></li>
+                        <li><a href="https://iop.ignouonline.ac.in/">IGNOU Online Programmes</a></li>
+                        <li><a href="https://igram.ignou.ac.in/">Student Grievances</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/aboutignou/division/mpdd/materials">Study Material Status</a></li>
+                        <li><a href="http://www.ignou.ac.in/userfiles/ALL%20%207%20jan%20b%20%20%2034%20page%20%20%20pdf.pdf">Study Material Catalogue</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/aboutignou/icc/cpc/Job%20Opportunities">Placement Assistance</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/ignoualumni/about">Alumni</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/aboutignou/division/id/introduction">International Students</a></li>
+                        <li><a href="http://www.ignouonline.ac.in/">IGNOU Online</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/studentzone/download/payments">Online Payment for miscellaneous fees</a></li>
+                        <li><a href="http://ignou.ac.in//userfiles/FAQs(1).pdf">FAQs for Promotion Scheme</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/footer/IGNOU%25E2%2580%2599s%2520Notification%2520on%2520Ragging">Notification on Ragging</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/aboutignou/icc/ncds/eoc">Equal Opportunity Cell(EOC)</a></li>
+                        <li><a href="https://egyankosh.ac.in/swayamprabha.jsp">Swayamprabha Channels(Video Telecast)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer color">
+                   <span style="font-weight: bold; font-size: 22px;"> Other Links</span>
+                    <ul>
+                        <li><a href="http://journal.ignouonline.ac.in/index.php/jjis">Jambudweep e-Journal of Indic Studies</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/ariia">ARIIA-2021</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/naac-visit">Videos of NAAC Peet Team Visit (2021)</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/footer/relatedlinks">Other Official WEbsites</a></li>
+                        <li><a href="https://voters.eci.gov.in/">National Voters Services Portal</a></li>
+                        <li><a href="http://ignou.ac.in/userfiles/Current%20Operational%20PIs%20updated%20on%209_1_15(1).pdf">Partner Institutions</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/aboutignou/icc/ncide/introduction">Innovation</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/bulletinboard/photo/latest/1">Photo Gallery</a></li>
+                        <li><a href="http://www.ignou.ac.in/ignou/footer/Anti%20Discrimination%20Officer">Anti Discrimination Officer</a></li>
+                        <li><a href="https://cybercrime.gov.in/">National Cyber Crime Reporting Portal</a></li>
+                        <li><a href="https://nyps.mpa.gov.in/">National Youth Parliament</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/weas">Web Enabled Academic Support (WEAS)</a></li>
+                        <li><a href="https://www.bharatiyachhatrasansad.org/">Bharatiya Chhatra Sansad</a></li>
+                        <li><a href="https://ndl.iitkgp.ac.in/">National Digital Library Of India</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer color">
+                   <span style="font-weight: bold; font-size: 22px;">Student Section ll</span>
+                    <ul>
+                        <li><a href="http://www.ignou.ac.in/ignou/aboutignou/icc/ssc/frequentlylinks">Frequently Useful Links</a></li>
+                        <li><a href="http://www.ignou.ac.in/userfiles/Swyamprabha.pdf">Daily Schedule of Videos Telecast for Swayamprabha Channels</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1m_PuGcRDa9os0WNDxdE-nPHi_qcnRgJs">Audio Resourances of EMPC</a></li>
+                        <li><a href="https://www.youtube.com/c/empcignou/playlists">Video Resourance of EMPC</a></li>
+                        <li><a href="http://ignou.ac.in/ignou/aboutignou/icc/empc/gyantime">Schedule of Gyandarshan channels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
