@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+         * {
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .head1{
+            color: white;
+            margin: auto;
+            width: 100%;
+            background-image: url(image/bg_2.jpg.webp);
+         }
+         .head2{
+            width: 100%;
+            margin: auto;
+            color: white;
+            /* position: sticky;
+            top: 0; */
+         }
+          .head{
+            width: 100%;
+            margin: auto;
+         }
+         .image{
+            width: 100%;
+            margin: auto;
+         }
+         .img11{
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 50px;
+            margin-right: 50px;
+            border: 1px solid black;
+         }
+         .pic{
+          width: 100%;
+          margin: auto;
+         }
+         .tab{
+          width: 100%;
+          margin: auto;
+         }
+         .write{
+          width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+         }
+         .write1{
+          width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+          padding-bottom: 120px;
+          padding-top: 80px;
+         }
+         .wrote{
+          width: 100%;
+          margin: auto;
+         }
+         .dish{
+          width: 100%;
+          margin: auto;
+         }
+         .image{
+          width: 100%;
+          margin: auto;
+         }
+         .image1{
+          width: 100%;
+          margin: auto;
+         }
+         .pick {
+            width: 100%;
+            margin: auto;
+            background-image: url(image/bg_3.jpg.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .pick1 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 50%;
+            margin-left: 40px;
+            background-color: white;
+        }
+        .circle{
+          width: 100%;
+          margin: auto;
+        }
+        .radies{
+          width: 100%;
+          margin: auto;
+        }
+        .square{
+          width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+        }
+        .square1{
+          width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+        }
+        .footer{
+          width: 100%;
+          margin: auto;
+          color: white;
+          background-color: black;
+        }
+
+         @media(min-width: 1200px){
+
+         }
+         @media(max-width: 1200px){
+            
+        }
+        @media(min-width: 992px){
+
+       }
+       @media(max-width: 992px){
+        .head1{
+                position: absolute;
+                visibility: hidden;
+             }
+       }
+       @media(max-width: 768px){
+        .pick1 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 70%;
+            background-color: white;
+        }
+       }
+       @media(max-width: 576px){
+        .pick1 {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            width: 85%;
+            background-color: white;
+        }
+       }
+       </style>
+</head>
+<body>
+                <div class="row head1">
+                    <div class="col-lg-3">
+                      <h5>+ 1235 2355 98</h5>
+                    </div>
+                    <div class="col-lg-3">
+                      <h5>youremail@email.com</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <h5>Open hours: Monday - Sunday 8:00AM - 9:00PM</h5>
+                    </div>
+                 </div>
+                 <div class="row head2 bg-dark">
+                    <div class="col-12" >
+                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <a class="navbar-brand" href="#" style="color: white;">Feliciano</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="justify-content: end;" >
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link mx-2" href="#" style="color: goldenrod;">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link mx-2" href="#" style="color: white;">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#" style="color: white;">Menu</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2" href="#" style="color: white;">Stories</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2" href="#" style="color: white;">Contact</a>
+                              </li>
+                              <form class="form-inline my-2 my-lg-0">
+                                <button class="bookTable px-2 py-2  my-2 my-sm-0" type="submit" style="color: white; font-size: 18px; border-radius: 8px; background-color: #c8a97e; border: none;">Book a table</button>
+                            </form>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                 </div>
+                 <div class="row head">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="image/bg_1.jpg.webp" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="image/bg_2.jpg.webp" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="image/bg_3.jpg.webp" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> 
+            </div>
+            <div class="container a">
+                <div class="row image mt-5">
+                    <div class="col-md-3 img1">
+                       <div class="row">
+                         <div class="col-6 img11">
+                        <img src="image/pic 1.webp" class="img-fluid">
+                    </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-12" style="text-align: center;">
+                        <p><span style="font-weight: 600; font-size: 18px;"> Grilled Beef with potatoes</span><br> Meat, Potatoes, Rice, Tomatoe</p>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 img2">
+                      <div class="row">
+                        <div class="col-6 img11">
+                       <img src="image/pic 2.webp" class="img-fluid">
+                   </div>
+                      </div>
+                      <div class="row">
+                       <div class="col-12" style="text-align: center;">
+                       <p><span style="font-weight: 600; font-size: 18px;"> Grilled Beef with potatoes</span><br> Meat, Potatoes, Rice, Tomatoe</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="col-md-3 img3">
+                      <div class="row">
+                        <div class="col-6 img11">
+                       <img src="image/pic 3.webp" class="img-fluid">
+                   </div>
+                      </div>
+                      <div class="row">
+                       <div class="col-12" style="text-align: center;">
+                       <p><span style="font-weight: 600; font-size: 18px;"> Grilled Beef with potatoes</span><br> Meat, Potatoes, Rice, Tomatoe</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="col-md-3 img4">
+                      <div class="row">
+                        <div class="col-6 img11">
+                       <img src="image/pic 4.webp" class="img-fluid">
+                   </div>
+                      </div>
+                      <div class="row">
+                       <div class="col-12" style="text-align: center;">
+                       <p><span style="font-weight: 600; font-size: 18px;"> Grilled Beef with potatoes</span><br> Meat, Potatoes, Rice, Tomatoe</p>
+                      </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+       <div class="container">
+         <div class="row pic mt-5">
+           <div class="col-md-6 pic">
+             <div class="row">
+               <div class="col-6">
+                 <img src="image/pic 5.webp" width="100%" height="440px">
+               </div>
+               <div class="col-6">
+                <img src="image/pic 6.webp" width="100%" height="440px">
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6 pic">
+            <p style="font-size: 74px; color: #c8a97e; font-family: serif;">about</p>
+            <p style="font-size: 47px;"><b>Feliciano<br>Restaurant</b></p> 
+            <p style="font-size: 18px;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+              </p>
+               <p style="font-size: 18px;">Mon - <span style="color: grey;"><b>Fri 8 AM - 11 PM</b></p>
+               <p style="color:#c8a97e; font-size: 43px; font-weight: bold;">+ 1-978-123-4567</p>
+           </div>
+         </div>
+       </div>  
+       <div class="container">
+        <div class="row tab my-5">
+           <div class="col-lg-4 tab">
+             <div class="row tab1">
+               <div class="col-md-6" style="text-align: center;">
+                <p style="font-size: 45px; font-weight: bold; color: #c8a97e;">18</p>
+                <p>YEARS OF EXPERIENCED</p> 
+               </div>
+               <div class="col-md-6" style="text-align: center;">
+                <p style="font-size: 45px; font-weight: bold; color: #c8a97e;">100</p>
+                <p>MENUS/DISH</p>
+               </div>
+             </div>
+           </div>
+           <div class="col-lg-4 tab">
+            <div class="row tab2">
+              <div class="col-md-6" style="text-align: center;">
+                <p style="font-size: 45px; font-weight: bold; color: #c8a97e;">50</p>
+                <p>STAFFS</p>
+              </div>
+              <div class="col-md-6" style="text-align: center;">
+                <p style="font-size: 45px; font-weight: bold; color: #c8a97e;">15,000 <br></p>
+                <p>HAPPY CUSTOMERS</p>
+              </div>
+            </div>
+           </div>
+           <div class="col-lg-4 tab" style="text-align: center;">
+            <p style="font-size: 20px;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+           </div>
+        </div>
+       </div>  
+     <div class="row write">
+       <div class="col">
+        <p style="font-size: 55px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Services</b></p>
+        <h1 style="font-size: 55px; font-weight: bolder; text-align: center;"><b>Catering Services</b></h1>
+       </div>
+     </div> 
+     <div class="row write1" style="justify-content: space-around;">
+      <div class="card" style="width: 18rem; background-color: #fafafa; border: none;">
+        <img class="card-img-top" src="image/bus meet img.jpg" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h4 class="card-title">Birthday Party</h4>
+          <p class="card-text">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; background-color: #fafafa; border: none;">
+        <img class="card-img-top" src="image/bus meet img.jpg" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h4 class="card-title">Business Meetings</h4>
+          <p class="card-text">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; background-color: #fafafa; border: none;">
+        <img class="card-img-top" src="image/bus meet img.jpg" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h4 class="card-title">Wedding Party</h4>
+          <p class="card-text">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </div>
+      </div>
+    </div> 
+    <div class="row wrote my-5">
+      <div class="col">
+       <p style="font-size: 55px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Specialties</b></p>
+       <h1 style="font-size: 55px; font-weight: bolder; text-align: center;"><b>Our Menu</b></h1>
+      </div>
+    </div> 
+    <div class="container">
+      <div class="row dish">
+        <div class="col-lg-6">
+          <div class="row">
+             <div class="col-sm-6">
+               <img src="image/pic 1.webp" width="100%" class="img-fluid">
+             </div>
+             <div class="col-sm-6 py-4">
+               <h4>Grilled Beef with potatoes</h4>
+               <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+               <button type="button" class="btn btn-outline-warning">Order now</button>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="image/pic 2.webp" width="100%" class="img-fluid">
+            </div>
+            <div class="col-sm-6 py-4">
+              <h4>Grilled Beef with potatoes</h4>
+              <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+              <button type="button" class="btn btn-outline-warning">Order now</button>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row dish">
+        <div class="col-lg-6">
+          <div class="row">
+             <div class="col-sm-6 py-4">
+               <h4>Grilled Beef with potatoes</h4>
+               <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+               <button type="button" class="btn btn-outline-warning">Order now</button>
+             </div>
+             <div class="col-sm-6">
+              <img src="image/pic 3.webp" width="100%" class="img-fluid">
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6 py-4">
+              <h4>Grilled Beef with potatoes</h4>
+              <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+              <button type="button" class="btn btn-outline-warning">Order now</button>
+            </div>
+            <div class="col-sm-6">
+              <img src="image/pic 7.webp" width="100%" class="img-fluid">
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row dish">
+        <div class="col-lg-6">
+          <div class="row">
+             <div class="col-sm-6">
+               <img src="image/pic 8.webp" width="100%" class="img-fluid">
+             </div>
+             <div class="col-sm-6 py-4">
+               <h4>Grilled Beef with potatoes</h4>
+               <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+               <button type="button" class="btn btn-outline-warning">Order now</button>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="image/pic 4.webp" width="100%" class="img-fluid">
+            </div>
+            <div class="col-sm-6 py-4">
+              <h4>Grilled Beef with potatoes</h4>
+              <p style="font-size: 20px;">Meat, Potatoes, Rice, Tomatoe</p>
+              <button type="button" class="btn btn-outline-warning">Order now</button>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="row image" style="margin-top: 160px; margin-bottom: 90px; ">
+      <div class="col">
+       <p style="font-size: 65px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Chef</b></p>
+       <h1 style="font-size: 50px; font-weight: bolder; text-align: center;"><b>Our Master Chef</b></h1>
+      </div>
+    </div> 
+    <div class="row image1" style="justify-content: space-around;">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="image/img 1.webp" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h5 class="card-title">John Smooth</h5>
+          <p class="card-text">Restaurant Owner</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="image/img 2.webp" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h5 class="card-title">Rebeca Welson</h5>
+          <p class="card-text">Head Chef</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="image/img 3.webp" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h5 class="card-title">Kharl Branyt</h5>
+          <p class="card-text">Chef</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="image/img 4.webp" alt="Card image cap" style=" background-color: #fafafa;">
+        <div class="card-body">
+          <h5 class="card-title">Luke Simon</h5>
+          <p class="card-text">Chef</p>
+        </div>
+      </div>
+    </div> 
+
+    <div class="row pick" style="margin-top: 160px;">
+      <div class="col-12">
+          <div class="row pick1">
+              <div class="col">
+                  <div class="row my-3" style="justify-content: center;">
+                    <p style="font-size: 50px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Book a table</b></p>
+                    <h1 style=" font-weight: bolder; text-align: center;"><b>Make Reservation</b></h1>
+                  </div>
+                  <div class="row my-3">
+                      <div class="col-6">
+                        <h5>Name</h5>
+                        <input class="form-control" type="text" placeholder="Your Name">
+                      </div>
+                      <div class="col-6">
+                        <h5>Email</h5>
+                        <input class="form-control" type="text" placeholder="Your Email">
+                      </div>
+                  </div>
+                  <div class="row my-3">
+                      <div class="col-6">
+                        <h5>Phone</h5>
+                        <input class="form-control" type="number" placeholder="Your Phone">
+                      </div>
+                      <div class="col-6">
+                        <h5>Date</h5>
+                        <input  class="form-control" type="date" placeholder="Date">
+                      </div>
+                  </div>
+                  <div class="row my-3">
+                      <div class="col-6">
+                        <h5>Time</h5>
+                        <input class="form-control" type="number" placeholder="Time">
+                      </div>
+                      <div class="col-6">
+                        <h5>Person</h5>
+                        <input class="form-control" type="number" placeholder="Person">
+                      </div>
+                  </div>
+                  <div class="row my-5" style="justify-content: center;">
+                    <button type="button" class="btn btn-outline-warning">Make a Reservation</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row circle" style="margin-top: 70px; margin-bottom: 100px; ">
+    <div class="col">
+     <p style="font-size: 65px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Testimony</b></p>
+     <h1 style="font-size: 58px; font-weight: bolder; text-align: center;"><b>Happy Customer</b></h1>
+    </div>
+  </div> 
+  <div class="row radies" style="justify-content: space-around; padding-bottom: 150px;">
+    <div class="card" style="width: 18rem; border: none;">
+      <img class="card-img-top img-fluid" src="image/person 1.webp" alt="Card image cap" style="border-radius: 50%;">
+      <div class="card-body">
+        <p class="card-text">Far far away, behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+        <h4 class="card-title">Ian Boner</h4>
+        <p class="card-text">Customer</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border: none;">
+      <img class="card-img-top img-fluid" src="image/person 2.webp" alt="Card image cap" style="border-radius: 50%;">
+      <div class="card-body">
+        <p class="card-text">Far far away, behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+        <h4 class="card-title">Jason McClean</h4>
+        <p class="card-text">Customer</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border: none;">
+      <img class="card-img-top img-fluid" src="image/person 3.webp" alt="Card image cap" style="border-radius: 50%;">
+      <div class="card-body">
+        <p class="card-text">Far far away, behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+        <h4 class="card-title">Mark Stevenson</h4>
+        <p class="card-text">Customer</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="row square py-5">
+    <div class="col">
+     <p style="font-size: 65px; color: #c8a97e; font-weight: lighter; font-style: italic; text-align: center;"><b>Blog</b></p>
+     <h1 style="font-size: 48px; font-weight: bolder; text-align: center;"><b>Recent Posts</b></h1>
+    </div>
+  </div>
+  <div class="row square1" style="justify-content: space-around; padding-top: 70px; padding-bottom: 150px;">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top img-fluid" src="image/image 1.webp" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Sept. 06, 2019 Admin</p>
+        <h4 class="card-title">Taste the delicious foods in Asia</h4>
+        <p class="card-text">Read more</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top img-fluid" src="image/image 2.webp" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Sept. 06, 2019 Admin</p>
+        <h4 class="card-title">Taste the delicious foods in Asia</h4>
+        <p class="card-text">Read more</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top img-fluid" src="image/image 3.webp" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Sept. 06, 2019 Admin</p>
+        <h4 class="card-title">Taste the delicious foods in Asia</h4>
+        <p class="card-text">Read more</p>
+      </div>
+    </div>
+  </div> 
+ <div class="row footer py-5">
+   <div class="col-lg-6">
+     <div class="row">
+       <div class="col-md-6 pt-4">
+         <h5>Feliciano</h5>
+         <p style="padding-top: 30px;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+       </div>
+       <div class="col-md-6 pt-4">
+        <h5>Open Hours</h5>
+        <p style="padding-top: 30px;">Monday    9:00 - 24:00<br>
+          Tuesday    9:00 - 24:00<br>
+          Wednesday  9:00 - 24:00<br>
+          Thursday   9:00 - 24:00<br>
+          Friday     9:00 - 02:00<br>
+          Saturday   9:00 - 02:00<br>
+          Sunday     9:00 - 02:00</p>
+       </div>
+     </div>
+   </div>
+   <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-6 pt-4">
+        <h5>Instagram</h5>
+        <img src="image/pic 4.webp" class="img-fluid" style="padding-top: 30px;">
+      </div>
+      <div class="col-md-6 pt-4">
+        <h5>Newsletter</h5>
+        <p style="padding-top: 30px;">Far far away, behind the word mountains, far from the countries.</p>
+        <button type="button" class="btn btn-outline-dark">Enter Email Address</button><br>
+        <button style="margin-top: 20px;" type="button" class="btn btn-outline-light">Subscribe</button>
+      </div>
+    </div>
+   </div>
+ </div>
+
+ <div class="row footer py-5" style="text-align: center;">
+  <div class="col">
+  <p>Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
+  </div>
+</div>
+</body>
+</html>
