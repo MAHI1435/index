@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Calculator in java script</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h3> Choose option to perform</h3>
+        <p>1. Add</p>
+        <p>2. Subtract</p>
+        <p>3. Multiply</p>
+        <p>4. Divide</p>
+        <input type="text" id="choice" onchange="choice()">
+    </div>
+
+    <div id="Add-Container" class="container" style="display: none;">
+        <table class="table table-hover">
+            <tr>
+                <td><input type="text" id="n1add" placeholder="Enter First no.">+</td>
+                <td><input type="text" id="n2add" placeholder="Enter Second no.">=</td>
+                <td><input type="text" id="resultadd"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Add" onclick="Add()"></td>
+                <td><input type="button" value="Clear" onclick="Clear_add()"></td>
+                <td><input type="button" value="Go Back" onclick="back_add()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Sub-Container" style="display: none;">
+        <table class="table table-hover">
+            <tr>
+                <td><input type="text" id="n1sub" placeholder="Enter First no.">-</td>
+                <td><input type="text" id="n2sub" placeholder="Enter Second no.">=</td>
+                <td><input type="text" id="resultsub"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Sub" onclick="Sub()"></td>
+                <td><input type="button" value="Clear" onclick="Clear_sub()"></td>
+                <td><input type="button" value="Go Back" onclick="back_sub()"></td>
+            </tr>
+            </table>
+    </div>
+
+    <div id="Multi-Container" style="display: none;">
+        <table class="table table-hover">
+            <tr>
+                <td><input type="text" id="n1multi" placeholder="Enter First no.">*</td>
+                <td><input type="text" id="n2multi" placeholder="Enter Second no.">=</td>
+                <td><input type="text" id="resultmulti"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Multi" onclick="Multi()"></td>
+                <td><input type="button" value="Clear" onclick="Clear_multi()"></td>
+                <td><input type="button" value="Go Back" onclick="back_multi()"></td>
+            </tr>
+            </table>
+    </div>
+    <div id="Div-Container" style="display: none;">
+        <table class="table table-hover">
+            <tr>
+                <td><input type="text" id="n1div" placeholder="Enter First no.">/</td>
+                <td><input type="text" id="n2div" placeholder="Enter Second no.">=</td>
+                <td><input type="text" id="resultdiv"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Div" onclick="Div()"></td>
+                <td><input type="button" value="Clear" onclick="Clear_div()"></td>
+                <td><input type="button" value="Go Back" onclick="back_div()"></td>
+            </tr>
+            </table>
+    </div>
+</body>
+<script>
+    function choice() {
+        var choice = document.getElementById("choice").value;
+        var menu = document.getElementById("menu");
+
+        if (choice == 1) {
+            menu.style.display = "none";
+            var add = document.getElementById("Add-Container");
+            add.style.display = "block";
+        }
+        else if (choice == 2) {
+            menu.style.display = "none";
+            var sub = document.getElementById("Sub-Container");
+            sub.style.display = "block";
+        }
+        else if (choice == 3) {
+            menu.style.display = "none";
+            var multi= document.getElementById("Multi-Container");
+            multi.style.display = "block";
+        }
+        else if (choice == 4) {
+            menu.style.display = "none";
+            var div= document.getElementById("Div-Container");
+            div.style.display = "block";
+        }
+    }
+    
+       
+
+    function back_add() {
+        var menu = document.getElementById("menu");
+        menu.style.display = "block";
+
+        var add = document.getElementById("Add-Container");
+        add.style.display = "none";
+    }
+    function back_sub() {
+        var menu = document.getElementById("menu");
+        menu.style.display = "block";
+
+        var sub = document.getElementById("Sub-Container");
+        sub.style.display = "none";
+    }
+    function back_multi() {
+        var menu = document.getElementById("menu");
+        menu.style.display = "block";
+
+        var multi = document.getElementById("Multi-Container");
+        multi.style.display = "none";
+    }
+    function back_div() {
+        var menu = document.getElementById("menu");
+        menu.style.display = "block";
+
+        var div = document.getElementById("Div-Container");
+        div.style.display = "none";
+    }
+
+
+
+    
+    function Add() {
+        var a = parseInt(document.getElementById("n1add").value);
+        var b = parseInt(document.getElementById("n2add").value);
+        var sum = a + b;
+        document.getElementById("resultadd").value = sum;
+    }
+
+    function Sub() {
+        var a = parseInt(document.getElementById("n1sub").value);
+        var b = parseInt(document.getElementById("n2sub").value);
+        var sub = a - b;
+        document.getElementById("resultsub").value = sub;
+    }
+
+    function Multi() {
+        var a = parseInt(document.getElementById("n1multi").value);
+        var b = parseInt(document.getElementById("n2multi").value);
+        var multi = a * b;
+        document.getElementById("resultmulti").value = multi;
+    }
+
+    function Div() {
+        var a = parseInt(document.getElementById("n1div").value);
+        var b = parseInt(document.getElementById("n2div").value);
+        var div = a / b;
+        document.getElementById("resultdiv").value = div;
+    }
+
+
+
+    function Clear_add(){
+        document.getElementById("n1add").value="";
+        document.getElementById("n2add").value="";
+        document.getElementById("resultadd").value="";
+    }
+
+    function Clear_sub(){
+        document.getElementById("n1sub").value="";
+        document.getElementById("n2sub").value="";
+        document.getElementById("resultsub").value="";
+    }
+
+    function Clear_multi(){
+        document.getElementById("n1multi").value="";
+        document.getElementById("n2multi").value="";
+        document.getElementById("resultmulti").value="";
+    }
+
+    function Clear_div(){
+        document.getElementById("n1div").value="";
+        document.getElementById("n2div").value="";
+        document.getElementById("resultdiv").value="";
+    }
+</script>
+</html>
