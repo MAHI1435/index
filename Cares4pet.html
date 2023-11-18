@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cares4pet.com</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .head{
+        width: 100%;
+        margin: auto;
+        background-image: linear-gradient(to right, #1e81f4, #1594c2 , #1299b3,#0aab87, #01bb59);
+    }
+
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .home{
+        margin: 0;
+    }
+    .home:hover{
+        border-bottom: 2px solid red;
+    }
+    
+    .heading{
+      width: 100%;
+      margin: auto;
+    }
+
+    .image{
+      width: 100%;
+      margin: auto;
+      padding-bottom: 70px;
+      justify-content: space-around;
+    }
+    .card1{
+      background-color: white;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: relative;
+      top: 0;
+    }
+    .card2{
+      background-color: white;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: relative;
+      top: 0;
+    }
+    .card3{
+      background-color: white;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: relative;
+      top: 0;
+    }
+    .r1{
+      position: absolute;
+      top: -47px;
+    }
+    .r2{
+      position: absolute;
+      bottom: -40px;
+    }
+   .colour{
+    margin: 0;
+   }
+   .colour:hover{
+    background-color: #00bd56;
+   }
+
+   .wrote{
+    width: 100%;
+    margin: auto;
+   }
+   .number{
+    width: 100%;
+    margin: auto;
+    background-color: #00bd56;
+    color: white;
+    font-weight: bold;
+    font-size: 46px;
+    text-align: center;
+   }
+   .radius-img{
+    width: 100%;
+    margin: auto;
+    background-color: #f8f9fa;
+   }
+   .backpick{
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+   }
+   .backimage{
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+   }
+   .written{
+    width: 100%;
+    margin: auto;
+    background-color: #f8f9fa;
+   }
+
+
+   .write{
+    width: 100%;
+    margin: auto;
+   }
+
+   .home{
+    font-size: 16px;
+   }
+   .home:hover{
+    color: green;
+    text-decoration-line: underline;
+    border: none;
+   }
+
+   .flow1{
+    font-size: 13px;
+    font-weight: 600;
+    color: #9e9898;
+   }
+   .flow1:hover{
+    color: black;
+    text-decoration-line: underline;
+   }
+
+
+   .picture{
+    width: 100%;
+    margin: auto;
+   background-image: url(Images/img\ 21.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   }
+   .picturecover{
+    width: 50%;
+    margin-left: 50%;
+    background-image: linear-gradient(to right, #1e81f4, #1594c2 , #1299b3,#0aab87, #01bb59);
+   }
+
+   .complete{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #1a1a1a;
+   }
+   .over{
+    padding-bottom: 10px;
+   }
+   .over:hover{
+    text-decoration: underline;
+   }
+ 
+
+
+    @media (max-width: 768px){
+        .head{
+        width: 100%;
+        margin: auto;
+        background-image: linear-gradient(to right, #1e81f4, #1594c2 , #1299b3,#0aab87, #01bb59);
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+    }
+    }
+
+    @media (max-width: 992px){
+      .picturecover{
+    width: 100%;
+    margin-left: 0%;
+    background-color: #1592c7;
+   }
+    }
+
+
+</style>
+</head>
+<body>
+ <div class="row head py-2">
+ <div class="col-md-2" style="display: flex;">
+    <i class="fa fa-phone" style="font-size:20px"></i>
+    <h5>6364066659</h5>
+ </div>
+ <div class="col-md-8" style="display: flex">
+    <i class="fa fa-telegram" style="font-size:20px"></i>
+    <h5>contactus@cares4pet.com</h5>
+ </div>
+ <div class="col-md-2" style="display: flex; justify-content: space-between;">
+    <i class="fa fa-facebook-f" style="font-size:20px"></i>
+    <i class="fa fa-twitter-square" style="font-size:20px"></i>
+    <i class="fa fa-instagram" style="font-size:20px"></i>
+    <i class="fa fa-dribbble" style="font-size:20px"></i>
+ </div>
+ </div>
+
+ <div class="row header">
+ <div class="col-lg-2 py-2">
+    <img src="Images/logo.jpeg" class="img-fluid">
+ </div>
+ <div class="col-lg-10" style="background-color: #f8f9fa;">
+    <div class="row">
+        <div class="col-10">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" style="padding-right: 60px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon pl-5" style="font-weight: 600;">Menu</span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active py-3 px-2 home">
+                      <a class="nav-link" href="#" style="color: rgb(228, 55, 55); font-size: 15px; font-weight: 700;">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active py-3 px-2 home">
+                      <a class="nav-link" href="#" style="color: black; font-size: 15px; font-weight: 600;">ABOUT <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item py-3 px-2 home">
+                      <a class="nav-link" href="#" style="color: black; font-size: 15px; font-weight: 600;">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown py-3 px-2 home">
+                      <a class="nav-link dropdown-toggle" href="#" style="color: black; font-size: 15px; font-weight: 600;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        FOOD PRODUCT
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">DRY FOOD</a>
+                        <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">SUPPLEMENTS</a>
+                        <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">TREATS</a>
+                        <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">WET FOOD</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown py-3 px-2 home">
+                        <a class="nav-link dropdown-toggle" href="#" style="color: black; font-size: 15px; font-weight: 600;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          TOYS & ACCESSORIES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">ACCESSORIES</a>
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">TOYS</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown py-3 px-2 home">
+                        <a class="nav-link dropdown-toggle" href="#" style="color: black; font-size: 15px; font-weight: 600;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          SERVICES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">PET CARE</a>
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">PET GROOMING</a>
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">PET TRAINING</a>
+                          <a class="dropdown-item" href="#" style="color: black; font-size: 15px; font-weight: 600;">PET SITTING</a>
+                        </div>
+                      </li>
+                    <li class="nav-item py-3 pl-2 pr-4 home">
+                        <a class="nav-link" href="#" style="color: black; font-size: 15px; font-weight: 600;">LOGIN</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+        <div class="col-2 py-4 px-2" style="display: flex; justify-content: space-between;">
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+            <i class="fa fa-heart-o" style="font-size:24px"></i>
+        </div>
+    </div>
+ </div>
+ </div>
+
+ <div class="row heading">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/img 1.jpg" class="d-block w-100" alt="img1">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/img 2.jpg" class="d-block w-100" alt="img2">
+      </div>
+    </div>
+   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+ </div>
+
+  <div class="row image" style=" background-color: #f8f9fa;">
+     <div class="col-md-3 card1 my-5 colour">
+     <h4 style="text-align: center;">Pet Training</h4>
+     <h6 style="text-align: justify;">Training is an essential part of owning a dog and can be started at any age. Training builds confidence, provides mental stimulation and strengthens the human-animal bond. Dogs are always learning.</h6>
+     <div class="row r1">
+      <p style="width: 105px; height: 90px; border-radius: 50%; text-align: center; margin-left: 80px; margin-right: 80px; background-color: #f0f0f0;">
+        <img src="Images/img 5.png" height="45px" width="40px" class="img-fluid py-4">
+      </p>
+     </div>
+     <div class="row r2">
+      <p style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid grey; text-align: center; margin-left: 110px; margin-right: 110px; font-size: 25px; font-weight: bold; background-color: #00bd56;"><span style="color: white;">></span></p>
+    </div>
+   </div>
+   <div class="col-md-3 card2 my-5 colour">
+    <h4 style="text-align: center;">Pet Sitting</h4>
+     <h6 style="text-align: justify;">“Pet sitting” is defined as “the act of caring for a pet in its own home while the owner is away.” Dog walking is also a form of pet sitting since it involves coming to the pet's home to provide exercise and companionship.</h6>
+     <div class="row r1">
+      <p style="width: 105px; height: 90px; border-radius: 50%; text-align: center; margin-left: 80px; margin-right: 80px; background-color: #f0f0f0;">
+        <img src="Images/img 6.jpg" height="52px" width="52px" class="img-fluid py-4">
+      </p>
+     </div>
+     <div class="row r2">
+      <p style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid grey; text-align: center; margin-left: 110px; margin-right: 110px; font-size: 25px; font-weight: bold; background-color: #00bd56;"><span style="color: white;">></span></p>
+    </div>
+   </div>
+   <div class="col-md-3 card3 my-5 colour">
+    <h4 style="text-align: center;">Pet Grooming</h4>
+    <h6 style="text-align: justify;">Pet grooming helps to keep your dog clean and healthy. Grooming has benefits that go beyond keeping your pet looking and smelling clean. Brushing the coat will take away damaged and old hair, allowing for a new and healthy coat.</h6>
+    <div class="row r1">
+     <p style="width: 105px; height: 90px; border-radius: 50%; text-align: center; margin-left: 80px; margin-right: 80px; background-color: #f0f0f0;">
+       <img src="Images/img 7.jfif" height="45px" width="40px" class="img-fluid py-4">
+      </p>
+    </div>
+    <div class="row r2">
+     <p style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid grey; text-align: center; margin-left: 110px; margin-right: 110px; font-size: 25px; font-weight: bold; background-color: #00bd56;"><span style="color: white;">></span></p>
+   </div>
+   </div>
+  </div>
+
+  <div class="row wrote py-5">
+  <div class="col-md-5">
+    <img src="Images/img 8.jpg" class="img-fluid">
+  </div>
+  <div class="col-md-7">
+    <p style="font-size: 30px; font-weight: 600;">Why Choose Us?</p>
+    <div class="row">
+      <div class="col-md-6" >
+        <div class="row py-3">
+          <div class="col-4">
+            <p style="border-radius: 50%; background-color: #00bd56; text-align: center; ">
+              <i class="fa fa-stethoscope py-3" style="font-size:48px; color: white; font-weight: 100;"></i>
+            </p>
+          </div>
+          <div class="col-8">
+            <h4>Care Advices </h4>
+              <h6 style="text-align: justify;">Helpful advice for carers across the UK. Since 1989, we've supported adults of all ages to maintain their independence and stay in the comfort of their own</h6>
+          </div>
+      </div>
+        <div class="row py-3">
+          <div class="col-4">
+            <p style="border-radius: 50%; background-color: #00bd56; text-align: center;  ">
+              <i class="fa fa-stethoscope py-3" style="font-size:48px; color: white; font-weight: 100;"></i>
+           
+            </p>
+          </div>
+          <div class="col-8">
+            <h4>Care Advices </h4>
+              <h6 style="text-align: justify;">Helpful advice for carers across the UK. Since 1989, we've supported adults of all ages to maintain their independence and stay in the comfort of their own</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row py-3">
+          <div class="col-4">
+            <p style="border-radius: 50%; background-color: #00bd56; text-align: center; ">
+              <i class="fa fa-stethoscope py-3" style="font-size:48px; color: white; font-weight: 100;"></i>
+            </p>
+          </div>
+          <div class="col-8">
+            <h4>Care Advices </h4>
+              <h6 style="text-align: justify;">Helpful advice for carers across the UK. Since 1989, we've supported adults of all ages to maintain their independence and stay in the comfort of their own</h6>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-4">
+            <p style="border-radius: 50%; background-color: #00bd56; text-align: center;  ">
+              <i class="fa fa-stethoscope py-3" style="font-size:48px; color: white; font-weight: 100;"></i>
+            </p>
+          </div>
+          <div class="col-8">
+            <h4>Care Advices </h4>
+              <h6 style="text-align: justify;">Helpful advice for carers across the UK. Since 1989, we've supported adults of all ages to maintain their independence and stay in the comfort of their own</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row number">
+   <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-6 py-3">
+        <p>50</p>
+        <p style="font-size: 21px;">Customer</p>
+      </div>
+      <div class="col-md-6 py-3">
+        <p>8,500</p>
+        <p style="font-size: 21px;">Professional</p>
+      </div>
+    </div>
+   </div>
+   <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-6 py-3">
+        <p>20</p>
+        <p style="font-size: 21px;">Products</p>
+      </div>
+      <div class="col-md-6 py-3">
+        <p>50</p>
+        <p style="font-size: 21px;">Pets Hosted</p>
+      </div>
+    </div>
+   </div>
+  </div>
+
+<div class="row radius-img">
+ <div class="col-lg-6 pb-5 px-5">
+  <h3 style="font-weight: 700;padding-top: 120px;">Frequently Asks Questions</h3>
+  <p style="font-weight: 600; font-size: 17px;">A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps.</p>
+ <input class="form-control pl-3 pr-3 my-3" type="button" id="btn1" value="How To Train Your Pet Dog?" style="color: black;font-weight: 600; font-size: 18px; border-radius: 22px; display: flex; justify-content: flex-start;">
+ <input class="form-control pl-3 pr-3 my-3" type="button" id="btn2" value="How To Manage Your Pets?" style="color: black;font-weight: 600; font-size: 18px; border-radius: 22px; display: flex; justify-content: flex-start;">
+ <input class="form-control pl-3 pr-3 my-3" type="button" id="btn3" value="Why Grooming Matters For Your Pet" style="color: black;font-weight: 600; font-size: 18px; border-radius: 22px; display: flex; justify-content: flex-start;">
+ <input class="form-control pl-3 pr-3 my-3" type="button" id="btn4" value="What Are The Benefits Of Pet Sitting?" style="color: black;font-weight: 600; font-size: 18px; border-radius: 22px; display: flex; justify-content: flex-start;">
+</div>
+ <div class="col-lg-6 pb-5 px-5 " style="padding-top: 100px;">
+   <div class="row py-2">
+    <img src="Images/img 9.jpg" alt="img 9" class="img-fluid">
+   </div>
+   <div class="row py-2">
+    <div class="col-6 py-2">
+      <img src="Images/img 10.jpg" alt="img 10" class="img-fluid" >
+    </div>
+    <div class="col-6 py-2">
+      <img src="Images/img 11.jpg" alt="img 11" class="img-fluid">
+    </div>
+   </div>
+ </div>
+</div>
+
+<div class="row backpick" style="position: relative; top: 0;">
+   <img src="Images/img 12.jpg" alt="" style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover; ">
+   <div class="row" style="width: 100%; margin: auto; justify-content: center; position: absolute; top: 120px;">
+    <h2><b>Happy Clients & Feedbacks</b></h2>
+   </div>
+   <div class="row" style="width: 100%; margin: auto; position: absolute; top: 320px; display: flex; justify-content: space-around;">
+    <div class="col-md-3 px-5 my-4" style="background-color: white;">
+      <div class="row mt-3 mb-4">
+     <h6 style="justify-content: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h6>
+    </div>
+     <div class="row mb-4">
+      <img src="Images/img 13.jpg" width="90px" class="img-fluid" style="border-radius: 50%;">
+     <h4 class="px-3 mt-3">Roger Scott</h4>
+    </div>
+    </div>
+    <div class="col-md-3 px-5 my-4" style="background-color: white;">
+      <div class="row mt-3 mb-4">
+        <h6 style="justify-content: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h6>
+       </div>
+        <div class="row mb-4">
+         <img src="Images/img 14.jpg" width="90px" class="img-fluid" style="border-radius: 50%;">
+        <h4 class="px-3 mt-3">Roger Scott</h4>
+       </div>
+    </div>
+    <div class="col-md-3 px-5 my-4" style="background-color: white;">
+      <div class="row mt-3 mb-4">
+        <h6 style="justify-content: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h6>
+       </div>
+        <div class="row mb-4">
+         <img src="Images/img 15.jpg" width="90px" class="img-fluid" style="border-radius: 50%;">
+        <h4 class="px-3 mt-3">Roger Scott</h4>
+       </div>
+      </div>
+   </div>
+  </div>
+
+  <div class="row backimage" style="background-color: #f8f9fa; padding-bottom: 160px;">
+    <div class="row" style=" width: 100%; margin: auto; padding-top: 100px; padding-bottom: 70px; justify-content: center;">
+      <h3><b>Affordable Packages</b></h3>
+    </div>
+    <div class="row mx-5" style="display: flex; justify-content: flex-start;">
+     <div class="col-md-4 mx-3" style="background-color: white; margin-bottom: 80px;">
+       <div class="row">
+        <div class="col">
+        <img src="Images/img 16.jpg" class="img-fluid">
+      </div>
+       </div>
+       <div class="row mt-3">
+        <div class="col" style="width: 100%; margin: auto; text-align: center;">
+         <p style="font-size: 21px; color: #00bd56; font-weight: 600;">PET GROOMING</p>
+        </div>
+       </div>
+       <div class="row mb-2">
+        <div class="col" style="width: 100%; margin: auto; text-align: center;">
+        <span class="price" style="font-size: 33px; font-weight: 700; color: rgb(190, 182, 182);">
+         <sup>RS</sup>
+         <span class="number" style="background-color: white;">
+         <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblPrice" style="color: black;">1300</span>
+        </span>
+        <sub style="font-size: 1rem; color: rgb(102, 178, 225);">
+          <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDuration_No">4</span>
+          <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDuration_By">Month</span>
+        </sub>
+      </span>
+    </div>
+       </div>
+       <div class="row">
+         <div class="col" style="width: 100%; margin: auto;">
+        <ul style="list-style: none;">
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);"> Bath</span>
+          </li>
+          <li style="background-color: white;  padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Shampoo & Conditioning</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Paw Massage</span>
+          </li >
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Teeth Cleaning</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Dematting</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Full Body Trimming</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Deshedding</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Blow Drying</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Combing & Brusing</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Tick & Flea Treatment</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Nail Clipping</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Sanitary Trimming</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Ear & Eye Cleaning</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Hair Styling</span>
+          </li>
+        </ul>
+      </div>
+       </div>
+       <div class="row" style="background-color: white;">
+        <div class="col mt-5 mb-4" style="text-align: center;">
+          <input type="button" id="btn1" value="GET STARTED" class="btn btn-success px-5 py-3" style="font-size: 16px; font-weight: 600; border: none; border-radius: none;">
+        </div>
+       </div>
+    </div>
+     <div class="col-md-4 mx-3" style="background-color: white; margin-bottom: 20px;">
+      <div class="row">
+        <div class="col">
+        <img src="Images/img 17.jpg" height="350px" width="100%">
+      </div>
+       </div>
+       <div class="row mt-3">
+        <div class="col" style="width: 100%; margin: auto; text-align: center;">
+         <p style="font-size: 21px; color: #00bd56; font-weight: 600;">PUPPY TRAINING</p>
+         <p style="font-size: 25px; font-weight: 700;">8 Session</p>
+        </div>
+       </div>
+       <div class="row mb-2">
+        <div class="col" style="width: 100%; margin: auto; text-align: center;">
+        <span class="price" style="font-size: 33px; font-weight: 700; color: rgb(190, 182, 182);">
+         <sup>RS</sup>
+         <span class="number" style="background-color: white;">
+         <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblPrice" style="color: black;">15999</span>
+        </span>
+        <sub style="font-size: 1rem; color: rgb(102, 178, 225);">
+          <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDuration_No">2</span>
+          <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDuration_By">Week</span>
+        </sub>
+      </span>
+    </div>
+       </div>
+       <div class="row">
+         <div class="col" style="width: 100%; margin: auto;">
+        <ul style="list-style: none;">
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Sit</span>
+          </li>
+          <li style="background-color: white;  padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Come</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Potty</span>
+          </li >
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Stand</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Down</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Leash Walk</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Biting Issue</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Pee & Poo Training</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Hifi</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Excessive Barking</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Shake Hand</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-check pl-3 pr-2" style="font-size:20px; color: rgb(14, 148, 182);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Jumping Control</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Rest</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Sleep</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Heal Walk</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Fetch & Drop</span>
+          </li>
+          <li style="background-color: #f2f2f2; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Jumping Control</span>
+          </li>
+          <li style="background-color:  white; padding-top: 8px; padding-bottom: 8px;">
+            <i class="fa fa-close pl-3 pr-2" style="font-size:20px;  color:  rgb(139, 135, 135);"></i></i><span style="font-size: 20px; font-weight: 600; color:  rgb(139, 135, 135);">Spin</span>
+          </li>
+        </ul>
+      </div>
+       </div>
+       <div class="row" style="background-color: white;">
+        <div class="col mt-5 mb-4" style="text-align: center;">
+          <input type="button" id="btn1" value="GET STARTED" class="btn btn-success px-5 py-3" style="font-size: 16px; font-weight: 600; border: none; border-radius: none;">
+        </div>
+       </div>
+    </div>
+    </div>
+  </div>
+
+<div class="row py-4 written" style="justify-content: center;">
+ <h2>Latest news from our blog</h2> 
+</div>
+
+<div class="row pt-3 pb-5 write" style="display: flex; justify-content: space-evenly;">
+  <div class="card" style="width: 19rem;">
+    <img src="Images/img 18.jpg" class="card-img-top" alt="image 18">
+    <div class="card-body">
+      <p class="card-text flow1">APRIL 07, 2020 ADMIN</p>
+      <p class="card-text home"><b>Even the all-powerful Pointing has no control about the blind texts</b></p>
+    </div>
+  </div>
+  <div class="card" style="width: 19rem;">
+    <img src="Images/img 19.jpg" class="card-img-top" alt="image 19">
+    <div class="card-body">
+      <p class="card-text flow1">APRIL 07, 2020 ADMIN</p>
+      <p class="card-text home"><b>Even the all-powerful Pointing has no control about the blind texts</b></p>
+    </div>
+  </div>
+  <div class="card" style="width: 19rem;">
+    <img src="Images/img 20.jpg" class="card-img-top" alt="img 20">
+    <div class="card-body">
+      <p class="card-text flow1">APRIL 07, 2020 ADMIN</p>
+      <p class="card-text home"><b>Even the all-powerful Pointing has no control about the blind texts</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="row picture">
+ <div class="row picturecover">
+  <div class="col-12 pb-5">
+ <div class="row">
+  <div class="col-12 pt-5 pb-3 px-5">
+    <h2 style="color: white;"><b>Free Consultation</b></h2>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+    <input class="form-control py-4" type="text" placeholder="Enter Owner Name" style="font-size: 18px; font-weight: 500;">
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+    <input class="form-control py-4" type="text" placeholder="Enter Mobile Number" style="font-size: 18px; font-weight: 500;">
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+    <input class="form-control py-4" type="text" placeholder="Pet Name" style="font-size: 18px; font-weight: 500;">
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-6 py-2 pl-5 ">
+    <input class="form-control py-4" type="text" placeholder="Pet Breed" style="font-size: 18px; font-weight: 500;">
+  </div>
+  <div class="col-6 py-2 pr-5">
+    <input class="form-control py-4" type="text" placeholder="Pet Age" style="font-size: 18px; font-weight: 500;">
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+     <input  class="form-control pt-1 pb-5"  type="file" type="text" placeholder="No File Choose" style="border: none; font-size: 18px; color: black; font-weight: 500;">
+    </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+    <textarea class="form-control pt-2 pb-4" placeholder="Address" style="font-size: 18px; font-weight: 500;"></textarea>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5"> 
+    <textarea class="form-control pt-2 pb-5" placeholder="Pet Issue" style="font-size: 18px; font-weight: 500;"></textarea>
+ </div>
+ <div class="row">
+  <div class="col-12 py-2 px-5">
+    <input class="form-control px-5 py-2" type="button" value="Contact Us" id="btn" style="color: white; background-color: #00bd56; border: none; font-size: 18px; font-weight: 500;">
+  </div>
+ </div>
+  </div>
+ </div>
+</div>
+
+<div class="row complete">
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-6 px-5 py-2">
+        <h4 style="color: white; padding-bottom: 25px;"><span style="border-bottom: 4px solid #00bd56;">Care</span>s4pet</h4>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px; text-align: justify;">Compassionate Caring for Your Furry Friends,Always at Your Service. Where Love Meets Paw-sitivity.Your Pet's Well-Being, Our Priority. Your Paws, Our Passion.</h6>
+        <i class="fa fa-twitter-square mx-2" style="font-size:22px; color: #00bd56; border-radius: 50%; background-color: #313131; padding: 10px;"></i>
+        <i class="fa fa-facebook-f mx-2" style="font-size:22px; color: #00bd56; border-radius: 50%; background-color: #313131; padding: 9px;"></i>
+        <i class="fa fa-instagram mx-2" style="font-size:22px; color: #00bd56; border-radius: 50%; background-color: #313131; padding: 9px;"></i>
+      </div>
+      <div class="col-md-6 px-5 py-2">
+        <h4 style="color: white; padding-bottom: 25px;"><span style="border-bottom: 4px solid #00bd56;">Our</span> Services</h4>
+       <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Pet Care</h6>
+       <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Pet Grooming</h6>
+       <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Pet Training</h6>
+       <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Pet Babysitting</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-6 px-5 py-2">
+        <h4 style="color: white; padding-bottom: 25px;"><span style="border-bottom: 4px solid #00bd56;">Quic</span>k Links</h4>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Home</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">About</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Contact</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Admin</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;" class="over">Delivery Boy</h6>
+      </div>
+      <div class="col-md-6 px-4 py-2">
+        <h4 style="color: white; padding-bottom: 25px;"><span style="border-bottom: 4px solid #00bd56;">Hav</span>e a Questions?</h4>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 10px;">	69, 7th Main Road, Mahadeshwara Nagar,BTM 2nd Stage, Bengaluru - 560076</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 20px;" class="over">
+          <i class="fa fa-phone mx-2" style="font-size:20px"></i>
+          	6364066659</h6>
+        <h6 style="color: rgb(181, 176, 176); padding-bottom: 20px;" class="over">	
+          <i class="fa fa-telegram mx-2" style="font-size:20px"></i>
+          contactus@cares4pet.com</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row py-5" style="width: 100%; margin: auto; justify-content: center;">
+  <h6 style="color: rgb(181, 176, 176);">Copyright ©2023 Cares4pet, All Right Reserved.| Design by
+    <span class="over" style="border-bottom: 2px solid rgb(181, 176, 176);"> Csdt It Solution</span></h6>
+</div>
+</div>
+</body>
+</html>
